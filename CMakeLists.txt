@@ -1,0 +1,6 @@
+cmake_minimum_required (VERSION 3.1)
+project (jsontests)
+set(CMAKE_CXX_STANDARD 11)
+add_subdirectory(jsoncpp)
+add_executable(jsontests jsoncpp.cpp)
+target_link_libraries(jsontests jsoncpp_lib_static)
